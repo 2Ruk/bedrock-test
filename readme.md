@@ -34,14 +34,11 @@ aws configure --profile your-profile-name
 ### 3. Bedrock Access 요청 및 권한 설정
 
 #### Bedrock 모델 액세스 요청
-1. AWS 콘솔 → **Amazon Bedrock**
-2. 왼쪽 메뉴 → **Model access**
-3. **Anthropic** 모델들 활성화:
-    - Claude 3 Haiku
-    - Claude 3 Sonnet
-    - Claude 3.5 Sonnet
-    - 기타 원하는 모델들
-4. **Submit** 버튼 클릭하여 액세스 요청
+![img.png](guide-images/img.png)
+![img_1.png](guide-images/img_1.png)
+![img_2.png](guide-images/img_2.png)
+![img_3.png](guide-images/img_3.png)
+![img_4.png](guide-images/img_4.png)
 
 #### IAM 권한 설정
 IAM 사용자에게 다음 정책 연결:
