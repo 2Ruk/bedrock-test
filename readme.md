@@ -47,19 +47,28 @@ aws configure --profile your-profile-name
 IAM 사용자에게 다음 정책 연결:
 ```json
 {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": [
-        "bedrock:InvokeModel",
-        "bedrock:InvokeModelWithResponseStream",
-        "bedrock:ListFoundationModels",
-        "bedrock:GetFoundationModel"
-      ],
-      "Resource": "*"
-    }
-  ]
+   "Version": "2012-10-17",
+   "Statement": [
+      {
+         "Sid": "BedrockBasicAccess",
+         "Effect": "Allow",
+         "Action": [
+            "bedrock:InvokeModel",
+            "bedrock:InvokeModelWithResponseStream",
+            "bedrock:ListFoundationModels",
+            "bedrock:GetFoundationModel"
+         ],
+         "Resource": "*"
+      },
+      {
+         "Sid": "BedrockInferenceProfiles",
+         "Effect": "Allow",
+         "Action": [
+            "bedrock:ListInferenceProfiles"
+         ],
+         "Resource": "*"
+      }
+   ]
 }
 ```
 
