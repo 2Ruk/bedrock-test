@@ -1,6 +1,7 @@
 # Bedrock Sample Code
 
-AWS Bedrock을 사용한 Claude AI 모델 테스트를 위한 TypeScript 샘플 프로젝트입니다.
+AWS Bedrock을 사용한 Claude AI 모델 테스트를 위한 TypeScript 샘플 프로젝트입니다.  
+Node 22 Version을 사용했습니다.
 
 ## 🚀 빠른 시작
 
@@ -127,7 +128,7 @@ npm run clean    # 빌드 파일 정리
 
 ### 크리덴셜 에러
 - `aws configure list --profile your-profile-name` 명령어로 설정 확인
-- AWS Access Key 유효성 확인
+- AWS Access Key 유효성 확인 | IAM 설정 확인
 
 ## 📚 참고 자료
 
